@@ -1,0 +1,22 @@
+<%- include('../partials/navBar') %> 
+
+    <!-- <h1 class="display-2 text-center"><%=randName%></h1> -->
+    
+    <!-- <form action="/?_method=DELETE" method="POST"> -->
+    
+    <% for (let name of names) {%>
+        <% if(name.name ===randName){ %> 
+            <h1 class="display-2 text-center"><%= name.name %></h1> 
+            <form style="display: inline;" action="/<%= name.id %>?_method=DELETE" method="POST">
+                <div class="d-grid gap-2 col-2 mx-auto">
+                    <button class="btn btn-primary btn-sm" type="submit">DELETE</button>
+                </div>
+                
+            </form>
+        <% } %> 
+    <% } %> 
+
+
+
+</body>
+</html>

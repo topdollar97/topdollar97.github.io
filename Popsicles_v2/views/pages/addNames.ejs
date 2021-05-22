@@ -1,0 +1,15 @@
+<%- include('../partials/navBar') %> 
+    <h1 style="text-align: center;">Enter Names!</h1>
+    <form action="/addNames" method="POST">
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <input type="text" class="form-control" placeholder="John Doe, Jane Doe"id="name" name="name" rows="3"></textarea>
+          </div>
+          <br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="submit">Submit!</button>
+        </div>
+    </form>
+    
+</body>
+</html>

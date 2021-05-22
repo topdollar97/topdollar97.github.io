@@ -1,0 +1,18 @@
+<%- include('../partials/navBar') %> 
+<ul class="list-unstyled display-3">
+    <div class="container">
+        <div class="row row-cols-2">
+            <% for (let name of names) {%>
+                <li><%= name.name %> 
+                    <form style="display: inline;" action="/<%= name.id %>?_method=DELETE" method="POST">
+                        <button class="btn btn-primary btn-sm" type="submit">DELETE</button>
+                    </form></li>
+    
+            <% } %> 
+        </div>
+    </div>
+    
+</ul>
+    
+</body>
+</html>
